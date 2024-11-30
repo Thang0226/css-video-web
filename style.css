@@ -88,6 +88,10 @@ body {
     width: 200px;
     margin: 0;
 }
+#head_link ul li a:visited {
+    color: blue;
+}
 #head_link ul li a:hover {
     text-decoration: underline;
+    color: red;
 }
