@@ -40,11 +40,7 @@ body {
 }
 
 #left_content {
-    position: absolute;
-    top: 140px;
-    left: 0;
-    padding-left: 10px;
-    width: 34.5%;
+    visibility: hidden;
 }
 
 #right_content {
@@ -52,7 +48,22 @@ body {
     top: 140px;
     right: 0;
     padding: 0 10px 0 5px;
-    width: 65%;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    #left_content {
+        position: absolute;
+        top: 140px;
+        left: 0;
+        padding-left: 10px;
+        width: 34.5%;
+        visibility: visible;
+    }
+
+    #right_content {
+        width: 65%;
+    }
 }
 
 #footer {
@@ -73,7 +84,8 @@ body {
 
 #head_link ul {
     margin: 5px 0 0 0;
-    text-align: center;
+    width: 100%;
+    padding: 0;
 }
 #head_link ul li {
     position: relative;
@@ -85,7 +97,7 @@ body {
 #head_link ul li a {
     display: block;     /* because <a> is not block by default */
     text-decoration: none;
-    width: 180px;
+    width: 100%;
     margin: 0;
 }
 #head_link ul li a:visited {
