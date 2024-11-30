@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, serif;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    background: lightgray;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#header img {
+    height: 90px;
+    width: 140px;
+}
+
+#head_link {
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+    margin: 0;
+    border: 5px solid white;
+    border-width: 5px 0;
+    background: lightgray;
+    position: fixed;
+    top: 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+#left_content {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    padding-left: 10px;
+    width: 34%;
+}
+
+#right_content {
+    position: fixed;
+    top: 140px;
+    right: 0;
+    padding: 0;
+    width: 65%;
+}
+
+#footer {
+    height: 30px;
+    width: 100%;
+    background: dimgray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+#footer p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+#head_link ul {
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+#head_link ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+#head_link ul li a {
+    display: block;     /* because <a> is not block by default */
+    text-decoration: none;
+    width: 200px;
+    margin: 0;
+}
+#head_link ul li a:hover {
+    text-decoration: underline;
+}
